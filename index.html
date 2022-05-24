@@ -11,11 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-                
-            },
-          }
+            theme: {
+                extend: {
+
+                },
+            }
         }
     </script>
     <style type="text/tailwindcss">
@@ -52,17 +52,18 @@
                 <img src="https://tlr.stripocdn.email/content/guids/CABINET_5ebd51945adb862745b1a105fbb2c4f4/images/431502878865957.png"
                     alt="logo" class="h-full">
             </div>
-    
+
             <!-- Descriptions -->
             <div class="mt-8 flex flex-col items-center">
                 <h1 class="text-[30px] text-[#333333] px-[12px] py=[8px] text-center">Thanks for your order</h1>
-                <p class="text-[14px] text-[#333333] mb-[20px] px-[24px] py-[18px] text-center">You'll receive an email when
+                <p class="text-[14px] text-[#333333] mb-[20px] px-[24px] py-[18px] text-center">You'll receive an email
+                    when
                     your items are shipped. If you have any questions, Call us 1-800-1234-5678.</p>
                 <a href="#"
                     class="text-[16px] text-white block bg-[#d48344] block min-w-[164px] min-h-[40px] leading-[40px] text-center rounded-[6px] mb-[36px]">View
                     order status</a>
             </div>
-    
+
             <!-- Bills -->
             <div class="flex justify-center mb-6">
                 <div class="bg-[#fef9ef] w-[800px] full-with-gap-sm grid grid-cols-1 sm:grid-cols-2 sm:full-with-gap">
@@ -93,38 +94,73 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- list items -->
             <div class="flex justify-center mb-3">
                 <div class="w-[800px] full-with-gap">
                     <div class="flex flex-col">
-                        <div class="grid grid-cols-3 mb-2">
+                        <div class="grid sm:grid-cols-3 mb-2">
                             <h1 class="text-center px-2 py-1.5 text-black font-semibold text-base">ITEMS ORDERED</h1>
-                            <span class="text-center px-2 py-1.5 text-[#333] text-sm font-normal">NAME</span>
-                            <div class="grid grid-cols-12 text-[#333] text-sm font-normal text-center">
+                            <span
+                                class="hidden sm:block text-center px-2 py-1.5 text-[#333] text-sm font-normal">NAME</span>
+                            <div class="hidden sm:grid grid-cols-12 text-[#333] text-sm font-normal text-center">
                                 <span class="col-span-3 px-2 py-1.5">QTY</span>
                                 <span class="col-span-8 px-2 py-1.5">PRICE</span>
                             </div>
                         </div>
                         <div class="w-full h-0.5 bg-[#efefef] self-center mb-2"></div>
                     </div>
-    
+
                     <div id="list-items">
                         <div class="flex flex-col">
-                            <div class="grid grid-cols-3 mb-2">
-                                <div class="flex justify-center items-center">
+                            <div class="grid grid-cols-12 mb-2">
+                                <div class="col-span-4 flex justify-center items-center">
                                     <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/78761502968147773.jpg"
-                                        alt="item" class="w-[40%] max-h-[90%]">
+                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
                                 </div>
-                                <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
-                                <div class="grid grid-cols-12 text-center">
-                                    <span class="col-span-3 px-2 py-1.5">1</span>
-                                    <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
+                                <div class="col-span-8 grid sm:grid-cols-2">
+                                    <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
+                                    <div class="grid grid-cols-12 text-center">
+                                        <span class="col-span-3 px-2 py-1.5">1</span>
+                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
                         </div>
                         <div class="flex flex-col">
+                            <div class="grid grid-cols-12 mb-2">
+                                <div class="col-span-4 flex justify-center items-center">
+                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg"
+                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
+                                </div>
+                                <div class="col-span-8 grid sm:grid-cols-2">
+                                    <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
+                                    <div class="grid grid-cols-12 text-center">
+                                        <span class="col-span-3 px-2 py-1.5">1</span>
+                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="grid grid-cols-12 mb-2">
+                                <div class="col-span-4 flex justify-center items-center">
+                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/22621502873981861.jpg"
+                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
+                                </div>
+                                <div class="col-span-8 grid sm:grid-cols-2">
+                                    <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
+                                    <div class="grid grid-cols-12 text-center">
+                                        <span class="col-span-3 px-2 py-1.5">1</span>
+                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
+                        </div>
+                        <!-- <div class="flex flex-col">
                             <div class="grid grid-cols-3 mb-2">
                                 <div class="flex justify-center items-center">
                                     <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg"
@@ -151,11 +187,11 @@
                                 </div>
                             </div>
                             <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-    
+
             <!-- Total pay -->
             <div class="flex justify-center">
                 <div class="grid grid-cols-2 sm:grid-cols-12 w-[800px] full-with-gap-sm mb-8">
@@ -173,12 +209,13 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- footer -->
             <div class="grid sm:grid-cols-12 bg-[#fef5e4] px-4 pt-5 pb-3">
                 <div class="sm:col-span-4 sm:block px-4 flex flex-col items-center justify-center">
                     <div class="h-[50px] mb-2">
-                        <img src="https://tlr.stripocdn.email/content/guids/CABINET_5ebd51945adb862745b1a105fbb2c4f4/images/431502878865957.png" alt="logo" class="max-h-full mb-2">
+                        <img src="https://tlr.stripocdn.email/content/guids/CABINET_5ebd51945adb862745b1a105fbb2c4f4/images/431502878865957.png"
+                            alt="logo" class="max-h-full mb-2">
                     </div>
                     <p class="mb-2 text-center sm:text-left">Po Box 3453 Colins St. Ceduna 4096 Australia</p>
                     <p class="mb-2">your@mail.com</p>
@@ -188,7 +225,8 @@
                         <h1 class="text-xl font-medium text">Information</h1>
                     </div>
                     <div class="">
-                        <p class="mb-2 text-center sm:text-left">Vector graphics designed by Freepik. You are receiving this email because
+                        <p class="mb-2 text-center sm:text-left">Vector graphics designed by Freepik. You are receiving
+                            this email because
                             you have visited our site or asked us about regular newsletter</p>
                         <p class="text-center">@Candle in the wind</p>
                     </div>

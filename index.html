@@ -44,7 +44,7 @@
     </style>
 </head>
 
-<body>
+<body class="bg-[#efefef]">
     <div class="bg-[#efefef] flex justify-center">
         <div class="w-[1000px] sm:full-with-gap md:full-with-gap-md  max-w-full bg-white">
             <!-- header -->
@@ -72,24 +72,24 @@
                         <div>
                             <div class="grid grid-cols-2 text-sm">
                                 <span class="block">Order #:</span>
-                                <span class="block">132322</span>
+                                <span id="order-id" class="block"></span>
                             </div>
                             <div class="grid grid-cols-2 text-sm">
                                 <span class="block">Order Date:</span>
-                                <span class="block">Oct 21, 2017</span>
+                                <span id="order-date" class="block"></span>
                             </div>
                             <div class="grid grid-cols-2 text-sm">
                                 <span class="block">Order Total:</span>
-                                <span class="block">300.000.000 VND</span>
+                                <span id="order-total" class="block"></span>
                             </div>
                         </div>
                     </div>
                     <div class="px-[20px] py-[24px]">
                         <h1 class="text-[16px] text-[#000] font-medium mb-[12px]">SHIPPING ADDRESS:</h1>
                         <div class="text-sm">
-                            <span class="block text-[#333]">Số 1 Đại Cồ Việt</span>
-                            <span class="block text-[#333]">Hai Bà Trưng</span>
-                            <span class="block text-[#333]">Hà Nội</span>
+                            <span id="order-address" class="block text-[#333]"></span>
+                            <span id="order-district" class="block text-[#333]"></span>
+                            <span id="order-city" class="block text-[#333]"></span>
                         </div>
                     </div>
                 </div>
@@ -112,82 +112,7 @@
                     </div>
 
                     <div id="list-items">
-                        <div class="flex flex-col">
-                            <div class="grid grid-cols-12 mb-2">
-                                <div class="col-span-4 flex justify-center items-center">
-                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/78761502968147773.jpg"
-                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
-                                </div>
-                                <div class="col-span-8 grid sm:grid-cols-2">
-                                    <span class="text-left px-2 py-1.5">Dog Treats</span>
-                                    <div class="grid grid-cols-12 text-center">
-                                        <span class="col-span-3 px-2 py-1.5">1</span>
-                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="grid grid-cols-12 mb-2">
-                                <div class="col-span-4 flex justify-center items-center">
-                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg"
-                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
-                                </div>
-                                <div class="col-span-8 grid sm:grid-cols-2">
-                                    <span class="text-left px-2 py-1.5">Blue Buffalo Chicken & Brown Rice</span>
-                                    <div class="grid grid-cols-12 text-center">
-                                        <span class="col-span-3 px-2 py-1.5">1</span>
-                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="grid grid-cols-12 mb-2">
-                                <div class="col-span-4 flex justify-center items-center">
-                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/22621502873981861.jpg"
-                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
-                                </div>
-                                <div class="col-span-8 grid sm:grid-cols-2">
-                                    <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
-                                    <div class="grid grid-cols-12 text-center">
-                                        <span class="col-span-3 px-2 py-1.5">1</span>
-                                        <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div>
-                        <!-- <div class="flex flex-col">
-                            <div class="grid grid-cols-3 mb-2">
-                                <div class="flex justify-center items-center">
-                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg"
-                                        alt="item" class="w-[40%] max-h-[90%]">
-                                </div>
-                                <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
-                                <div class="grid grid-cols-12 text-center">
-                                    <span class="col-span-3 px-2 py-1.5">1</span>
-                                    <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
-                                </div>
-                            </div>
-                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div class="grid grid-cols-3 mb-2">
-                                <div class="flex justify-center items-center">
-                                    <img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/22621502873981861.jpg"
-                                        alt="item" class="w-[40%] max-h-[90%]">
-                                </div>
-                                <span class="text-left px-2 py-1.5">Natural Balance L.I.D. Sweet Potato & Venison</span>
-                                <div class="grid grid-cols-12 text-center">
-                                    <span class="col-span-3 px-2 py-1.5">1</span>
-                                    <span class="col-span-8 px-2 py-1.5">200.000.000 VND</span>
-                                </div>
-                            </div>
-                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
-                        </div> -->
+                        
                     </div>
                 </div>
             </div>
@@ -196,16 +121,16 @@
             <div class="flex justify-center">
                 <div class="grid grid-cols-2 sm:grid-cols-12 w-[800px] full-with-gap-sm mb-8">
                     <div class="sm:col-span-7 md:col-span-8 lg:col-span-9 sm:text-right">
-                        <p class="px-4 py-px text-base sm:text-lg text-[#333]">Subtotal (<span>3</span> items):</p>
+                        <p class="px-4 py-px text-base sm:text-lg text-[#333]">Subtotal (<span id="number-total"></span> items):</p>
                         <p class="px-4 py-px text-base sm:text-lg text-[#333]">Flat-rate Shipping:</p>
                         <p class="px-4 py-px text-base sm:text-lg text-[#333]">Discount:</p>
                         <p class="px-4 py-px text-base sm:text-lg text-[#333] font-bold">Order Total:</p>
                     </div>
                     <div class="sm:col-span-5 sm:text-right sm:mr-5 md:mr-5 md:col-span-4 lg:col-span-3 lg:mr-0">
-                        <p class="px-4 py-px text-base sm:text-lg text-[#333]">200.000.000 VND</p>
-                        <p class="px-4 py-px text-base sm:text-lg text-[#333] text-[#d48344] font-bold">FREE</p>
-                        <p class="px-4 py-px text-base sm:text-lg text-[#333]">0 VND</p>
-                        <p class="px-4 py-px text-base sm:text-lg text-[#333] text-[#d48344] font-bold">$40.57</p>
+                        <p id="total-paid" class="px-4 py-px text-base sm:text-lg text-[#333]"></p>
+                        <p id="ship-cost" class="px-4 py-px text-base sm:text-lg text-[#333] text-[#d48344] font-bold"></p>
+                        <p id="discount" class="px-4 py-px text-base sm:text-lg text-[#333]"></p>
+                        <p id="final-paid" class="px-4 py-px text-base sm:text-lg text-[#333] text-[#d48344] font-bold"></p>
                     </div>
                 </div>
             </div>
@@ -234,6 +159,54 @@
             </div>
         </div>
     </div>
+
+    <!-- javascript -->
+    <script>
+        const $ = document.querySelector.bind(document)
+        const orderApi = 'http://localhost:3000/orders'
+
+        fetch(orderApi)
+            .then(response => response.json())
+            .then((order) => {
+                $('#order-id').innerText = order.order_id
+                $('#order-date').innerText = order.create_time
+                const orderTotal = $('#order-total')
+                orderTotal.innerText = order.total_cost_number + ' VND'
+                $('#order-address').innerText = order.shipping_address.address
+                $('#order-district').innerText = order.shipping_address.district
+                $('#order-city').innerText = order.shipping_address.cities
+
+                var numberTotal = 0
+                var htmls = order.products.map((product) => {
+                    numberTotal += product.quantity
+                    return `
+                        <div class="flex flex-col">
+                            <div class="grid grid-cols-12 mb-2">
+                                <div class="col-span-4 flex justify-center items-center">
+                                    <img src=${product.image}
+                                        alt="item" class="w-[80%] sm:w-[50%] md:w-[40%] max-h-full">
+                                </div>
+                                <div class="col-span-8 grid sm:grid-cols-2">
+                                    <span class="text-left px-2 py-1.5">${product.name}</span>
+                                    <div class="grid grid-cols-12 text-center">
+                                        <span class="col-span-3 px-2 py-1.5">${product.quantity}</span>
+                                        <span class="col-span-8 px-2 py-1.5">${product.price} VND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 bg-[#efefef] self-center mb-3"></div>
+                        </div>
+                    `
+                })
+                $('#list-items').innerHTML = htmls.join('')
+                $('#number-total').innerText = numberTotal
+                $('#total-paid').innerText = order.total_cost_number + ' VND'
+                $('#ship-cost').innerText = order.shipping_cost > 0 ? order.shipping_cost + ' VND' : 'FREE'
+                $('#discount').innerText = order.discount + ' VND'
+                $('#final-paid').innerText = order.total_cost_number + order.shipping_cost - order.discount + ' VND'
+            })
+
+    </script>
 </body>
 
 </html>

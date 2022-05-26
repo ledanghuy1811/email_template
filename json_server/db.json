@@ -1,0 +1,47 @@
+{
+    "orders": {
+        "_id": 123,
+        "order_id": "order123",
+        "user_id": 456,
+        "customer_email": "123@gmail.com",
+        "shipping_address": {
+            "receiver_name": "Le Dinh Huy",
+            "receiver_phone_number": "0123456789",
+            "address": "Số 1, Đại Cồ Việt",
+            "cities": "Hà Nội",
+            "district": "Hai Bà Trưng",
+            "ward": "Miền Bắc"
+        },
+        "payment_method": "cash",
+        "products": [
+            {
+                "_id": 123,
+                "name": "Dog Treats",
+                "price": 2000000,
+                "quantity": 1,
+                "image": "https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/78761502968147773.jpg"
+            },
+            {
+                "_id": 143,
+                "name": "Blue Buffalo Chicken & Brown Rice",
+                "price": 400000,
+                "quantity": 1,
+                "image": "https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg"
+            },
+            {
+                "_id": 113,
+                "name": "Natural Balance L.I.D. Sweet Potato & Venison",
+                "price": 560000,
+                "quantity": 1,
+                "image": "https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/22621502873981861.jpg"
+            }
+        ],
+        "total_cost_number": 2960000,
+        "discount": 0,
+        "shipping_unit": "shop express",
+        "shipping_cost": 30000,
+        "shipping_code": "se123",
+        "create_time": "19/05/2022",
+        "status": "đã xác nhận, lên đơn và giao hàng"
+    }
+}
